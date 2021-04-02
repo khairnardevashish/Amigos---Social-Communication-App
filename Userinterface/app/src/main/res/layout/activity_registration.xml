@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pro"
+    tools:context="com.example.devyug.userinterface.Registration">
+
+    <EditText
+        android:id="@+id/un1"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/iconuser"
+        android:ems="10"
+
+        android:layout_marginTop="3dp"
+        android:hint=" Username"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/phone"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_alignStart="@+id/phone" />
+
+    <EditText
+        android:id="@+id/ps"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/iconpass"
+        android:layout_marginTop="3dp"
+        android:hint=" Password"
+        android:layout_below="@+id/ml"
+        android:layout_alignLeft="@+id/ml"
+        android:layout_alignStart="@+id/ml" />
+
+    <EditText
+        android:id="@+id/ml"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:gravity="left"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="3dp"
+        android:hint=" E-mail"
+        android:drawableLeft="@drawable/iconemail"
+        android:layout_below="@+id/phone"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="13dp"
+        app:srcCompat="@drawable/upload"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/Reg"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tran"
+        android:text="Register Me"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_marginTop="3dp"
+        android:hint="Mobile Number"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/ml"
+        android:drawableLeft="@drawable/phone"
+        android:layout_alignStart="@+id/ml" />
+
+</RelativeLayout>

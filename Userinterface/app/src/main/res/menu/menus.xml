@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.minu.menuoption.slider">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/view_profile"
+            android:title="@string/view_profile"
+            app:showAsAction="never"
+            />
+
+        <item
+            android:id="@+id/notification_settings"
+            android:title="@string/notification_setting"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/logout"
+            android:title="@string/logout"
+            app:showAsAction="never"
+            />
+
+    </group>
+</menu>

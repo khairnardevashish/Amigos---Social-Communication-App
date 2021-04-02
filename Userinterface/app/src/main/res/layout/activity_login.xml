@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pro"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.devyug.userinterface.login">
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@+id/register"
+        android:layout_alignBottom="@+id/register"
+        android:layout_alignLeft="@+id/pas"
+        android:layout_alignStart="@+id/pas"
+        android:background="@drawable/tran"
+        android:text="SignIn"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_marginTop="20dp"
+        android:layout_width="330dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#000000"
+        android:contextClickable="false"
+        android:drawableLeft="@drawable/iconemail"
+        android:ems="10"
+        android:hint="  Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="@color/authui_colorPrimary"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="44dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/pas"
+        android:layout_width="330dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/mail"
+        android:layout_alignStart="@+id/mail"
+        android:layout_below="@+id/mail"
+        android:backgroundTint="#000000"
+        android:drawableLeft="@drawable/iconpass"
+        android:ems="10"
+        android:hint=" password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/pas"
+        android:layout_alignRight="@+id/pas"
+        android:layout_below="@+id/pas"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/tran"
+        android:text="Register"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/spla"
+        app:srcCompat="@drawable/tran"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/forgetpas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/register"
+        android:layout_alignRight="@+id/register"
+        android:layout_below="@+id/signin"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Forgot your password?"
+        android:textAlignment="textEnd"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+</RelativeLayout>
+</ScrollView>
